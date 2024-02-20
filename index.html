@@ -83,19 +83,19 @@
                 <!-- life and score section  -->
                 <div class="flex justify-between w-[1300px]">
                     <button class="btn btn-sm bg-[#894189] text-white w-40 text-xl h-14 rounded-full">Life<img
-                            src="images/Group 23.png" alt=""><span>0</span></button>
+                            src="images/Group 23.png" alt=""><span id="life-Dec-Id">5</span></button>
                     <button class="btn btn-sm bg-[#360490] text-white w-40 text-xl h-14 rounded-full">Score<img
-                            src="images/monetization_on.png" alt=""><span>0</span></button>
+                            src="images/monetization_on.png" alt=""><span id="score-Inc-Id">0</span></button>
                 </div>
             </div>
         </section>
         <!-- Result Section -->
-        <section class="border min-h-screen flex justify-center items-center hidden">
+        <section id="result-section" class="min-h-screen flex justify-center items-center hidden">
             <div
                 class="flex flex-col justify-center items-center rounded-2xl w-[396px] h-[282px] bg-gradient-to-br from-purple-500 to-violet-950">
                 <p class="text-white poppins-extrabold text-[64px]">Score <span class="poppins-semibold">: </span><span
-                        class="poppins-medium">0</span></p>
-                <button class="btn w-36 bg-white poppins-semibold text-2xl">Button</button>
+                        class="poppins-medium" id="game-End-Score">0</span></p>
+                <button onclick="homeToGame()" class="btn w-44 bg-white poppins-semibold text-2xl">Play Again</button>
                 <p class="text-white poppins-medium text-[20px] pt-4">Practice will make you Pro</p>
             </div>
         </section>
